@@ -87,17 +87,16 @@ How to Run the Analysis
 1. **Clone the Repository**:
 
 ```bash
-git clone https://github.com/your-username/compas-fairness-audit.git
-cd compas-fairness-audit
+git clone https://github.com/edmondweb/AI-Ethics-Assignment.git
 ```
 
-1. **Download the Dataset**:  
+2. **Download the Dataset**:  
    Ensure that you have the COMPAS recidivism dataset files in the same directory as the notebook or script.
 
-2. **Run the Analysis**:  
+3. **Run the Analysis**:  
    Open the Python script or Jupyter notebook (`compare.py`  and run the code blocks to perform the fairness audit.
 
-3. **View the Results**:  
+4. **View the Results**:  
    The script will generate various visualizations (bar plots) to help you assess the fairness of the COMPAS tool in predicting recidivism based on race.
 
 Example Output
@@ -107,6 +106,8 @@ Example Output
 
 * A bar chart showing the average recidivism risk score for each racial group, highlighting potential racial disparities.
 
+![Figure_1](C:\Users\user\Desktop\Figure_1.png)
+
 ### 2. **False Positive Rate by Race**:
 
 * A bar chart illustrating the false positive rate for each racial group, showing how often low-risk individuals are misclassified as high-risk.
@@ -114,6 +115,8 @@ Example Output
 ### 3. **True Positive Rate by Race**:
 
 * A bar chart displaying the true positive rate for each racial group, indicating how well the model identifies high-risk individuals.
+
+![gt](C:\Users\user\Desktop\gt.png)
 
 ### 4. **Disparity in False Positive Rates**:
 
@@ -129,5 +132,3 @@ This project focuses on basic fairness analysis, but there are several opportuni
 * **Additional Metrics**: Explore other fairness metrics, such as **statistical parity**, **equal opportunity**, and **disparate treatment**.
 
 * **External Audits**: Use the **AI Fairness 360** library for more advanced audits and debiasing.
-
-
